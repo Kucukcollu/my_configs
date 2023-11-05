@@ -1,0 +1,29 @@
+{
+    "terminal.integrated.fontSize": 12,
+    "editor.accessibilitySupport": "off",
+    "window.zoomLevel": 0,
+    "workbench.tree.indent": 20,
+    "explorer.compactFolders": false,
+    "workbench.colorCustomizations": {
+        "tree.indentGuidesStroke": "#48ff00"
+    },
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": false,
+        "python": true
+    },
+    "editor.fontSize": 12,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Visual Studio Dark - C++",
+    "editor.fontFamily": "'Cascadia Code', Monaco, Consolas, Monaco, 'Courier New', monospace",
+    "files.autoSave": "afterDelay",
+    "git.openRepositoryInParentFolders": "never",
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    }
+}
