@@ -7,6 +7,7 @@
         "ms-vscode.cpptools",           // C++ IntelliSense, debugging, and code browsing
         "ms-vscode.cpptools-themes",    // Additional themes for C++ language support
         "ms-vscode.cpptools-extension-pack", // C++ extension pack for advanced development tools
+        "formulahendry.code-runner"    // code runner
 
         // Make and CMake
         "ms-vscode.makefile-tools",     // Makefile support for building C++ projects
