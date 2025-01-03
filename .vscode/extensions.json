@@ -2,6 +2,7 @@
     "recommendations": [
         // Docker-related extensions
         "ms-azuretools.vscode-docker",  // Docker integration for building, managing containers
+        "ms-vscode-remote.remote-containers" // connect docker via vs code
         
         // C++ development
         "ms-vscode.cpptools",           // C++ IntelliSense, debugging, and code browsing
