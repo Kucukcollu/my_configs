@@ -49,6 +49,9 @@
         "streetsidesoftware.code-spell-checker", // Spell checker for comments and strings
         "xaver.clang-format"            // format code for C / C++
 
+        // Documentation
+        "cschlosser.doxdocgen"    // create autocomplete comments and document for C++
+
         // Utilities
         "MS-vsliveshare.vsliveshare",   // Live Share for real-time collaboration
         "editorconfig.editorconfig",    // Maintain consistent coding styles across editors
