@@ -2,10 +2,6 @@
     "configurations": [
         {
             "name": "Linux",
-            "intelliSenseMode": "gcc-x64",
-            "compilerPath": "/usr/bin/g++",
-            "cStandard": "c11",
-            "cppStandard": "c++17",
             "includePath": [
                 "${workspaceFolder}/**",
                 "/opt/ros/humble/include/**",
@@ -19,6 +15,30 @@
                 "/usr/local/include/gtsam",
                 "/usr/local/include/gtest",
                 "/usr/local/include/gmock"
+            ],
+            "defines": [],
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-clang-x64",
+            "compilerPath": "/usr/bin/clang++",
+            "compilerArgs": [
+                "-std=c++17",
+                "-Wpedantic",
+                "-Wall",
+                "-Wextra",
+                "-Werror",
+                "-Wunused",
+                "-Wconversion",
+                "-Wsign-conversion",
+                "-O2",
+                "-g",
+                "-fsanitize=address",
+                "-fsanitize=undefined",
+                "-fsanitize=thread",
+                "-fanalyzer",
+                "-fcolor-diagnostics",
+                "-fdiagnostics-show-option",
+                "-fdiagnostics-absolute-paths"
             ]
         }
     ],
