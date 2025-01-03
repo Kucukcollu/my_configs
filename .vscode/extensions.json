@@ -58,5 +58,6 @@
         "foxundermoon.shell-format",    // Shell script formatting (useful for ROS and Docker scripts)
         "bbenoist.vagrant"              // Vagrant support (if using virtualized environments)
         "vscode-icons-team.vscode-icons"    // vs code icons
+        "formulahendry.auto-rename-tag"    // automatically changes ending name of xml
     ]
 }
