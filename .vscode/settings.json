@@ -1,49 +1,58 @@
 {
     "terminal.integrated.fontSize": 12,
+
+    "editor.fontFamily": "'Cascadia Code', Monaco, Consolas, Monaco, 'Courier New', monospace",
     "editor.accessibilitySupport": "off",
-    "window.zoomLevel": 0,
-    "workbench.tree.indent": 15,
-    "explorer.compactFolders": false,
-    "workbench.colorCustomizations": {
-        "tree.indentGuidesStroke": "#3cff00"
+    "editor.fontSize": 12,
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.convertImportFormat": "explicit",
+        "source.unusedImports": "explicit"
     },
+
+    "window.zoomLevel": 0,
+
+    "workbench.tree.indent": 30,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.colorCustomizations": {
+        "tree.indentGuidesStroke": "#008cff"
+    },
+
+    "files.autoSave": "afterDelay",
+
+    "explorer.compactFolders": false,
+
     "clang-format.executable": "clang-format",
     "clang-format.style": "file",
     "clang-format.fallbackStyle": "Google",
-    "clang-format.formatOnSave": true,
-    "clang-format.formatOnType": true,
-    "clang-format.arguments": [
-        "-assume-filename=${workspaceFolder}/.clang-format"
-    ],
-    "github.copilot.enable": {
-        "*": true,
-        "yaml": false,
-        "plaintext": false,
-        "markdown": false,
-        "python": true
-    },
-    "editor.fontSize": 12,
+    "clang-format.language.cpp.enable": true,
+
+    "cmake.languageSupport.enableFileAPI": true,
+
+    "ros.distro": "humble",
+    "ros.rosSetupScript": "/opt/ros/humble/install/setup.bash",
+    "ros.isolateEnvironment": false,
+
     "[python]": {
         "editor.formatOnType": true
     },
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Default Dark Modern",
-    "editor.fontFamily": "'Cascadia Code', Monaco, Consolas, Monaco, 'Courier New', monospace",
-    "files.autoSave": "afterDelay",
+
     "git.openRepositoryInParentFolders": "never",
+
     "[cpp]": {
         "editor.defaultFormatter": "ms-vscode.cpptools"
     },
+
     "python.autoComplete.extraPaths": [
-        "/opt/ros/foxy/lib/python3.8/site-packages",
-        "/opt/carla-simulator/PythonAPI/carla/dist/carla-0.9.14-py3.8-linux-x86_64.egg",
-        "/opt/carla-simulator/PythonAPI/carla"
+        "/opt/ros/humble/lib/python3.10/site-packages",
     ],
     "python.analysis.extraPaths": [
-        "/opt/ros/foxy/lib/python3.8/site-packages",
-        "/opt/carla-simulator/PythonAPI/carla/dist/carla-0.9.14-py3.8-linux-x86_64.egg",
-        "/opt/carla-simulator/PythonAPI/carla"
+        "/opt/ros/humble/lib/python3.10/site-packages",
     ],
+    
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
         "cctype": "cpp",
