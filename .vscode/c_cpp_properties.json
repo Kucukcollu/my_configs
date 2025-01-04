@@ -19,8 +19,8 @@
             "defines": [],
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "linux-clang-x64",
-            "compilerPath": "/usr/bin/clang++",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerPath": "/usr/bin/g++",
             "compilerArgs": [
                 "-std=c++17",
                 "-Wpedantic",
@@ -34,11 +34,8 @@
                 "-g",
                 "-fsanitize=address",
                 "-fsanitize=undefined",
-                "-fsanitize=thread",
                 "-fanalyzer",
-                "-fcolor-diagnostics",
-                "-fdiagnostics-show-option",
-                "-fdiagnostics-absolute-paths"
+                "-fdiagnostics-show-option"
             ]
         }
     ],
