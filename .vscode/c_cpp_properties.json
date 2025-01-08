@@ -1,4 +1,7 @@
 {
+    "env": {
+        "myIncludePath": ["${workspaceFolder}/include", "${workspaceFolder}/src"]
+    },
     "configurations": [
         {
             "name": "Linux",
@@ -19,6 +22,8 @@
             "defines": [],
             "cStandard": "c17",
             "cppStandard": "c++17",
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
             "intelliSenseMode": "linux-gcc-x64",
             "compilerPath": "/usr/bin/g++",
             "compilerArgs": [
@@ -36,8 +41,13 @@
                 "-fsanitize=undefined",
                 "-fanalyzer",
                 "-fdiagnostics-show-option"
-            ]
+            ],
+            "browse": {
+                "path": ["${workspaceFolder}/**", "/usr/include", "/usr/local/include"],
+                "limitSymbolsToIncludedHeaders": true
+              }
         }
     ],
-    "version": 4
+    "version": 4,
+    "enableConfigurationSquiggles": true
 }
