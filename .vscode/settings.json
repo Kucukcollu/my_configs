@@ -1,9 +1,8 @@
 {
     "terminal.integrated.fontSize": 12,
-
     "editor.fontFamily": "'Cascadia Code', Monaco, Consolas, Monaco, 'Courier New', monospace",
     "editor.accessibilitySupport": "off",
-    "editor.fontSize": 12,
+    "editor.fontSize": 15,
     "editor.tabSize": 4,
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
@@ -11,118 +10,78 @@
         "source.convertImportFormat": "explicit",
         "source.unusedImports": "explicit"
     },
+    "editor.tokenColorCustomizations": {
+        "comments": "#747474"
+    },
 
+    // Controls if quick suggestions should show up while typing
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+    
+    // Controls whether suggestions should be accepted on commit characters. For example, in JavaScript, the semi-colon (`;`) can be a commit character that accepts a suggestion and types that character.
+    "editor.acceptSuggestionOnCommitCharacter": true,
+
+    // Controls if suggestions should be accepted on 'Enter' - in addition to 'Tab'. Helps to avoid ambiguity between inserting new lines or accepting suggestions. The value 'smart' means only accept a suggestion with Enter when it makes a textual change
+    "editor.acceptSuggestionOnEnter": "on",
+
+    // Controls the delay in ms after which quick suggestions will show up.
+    "editor.quickSuggestionsDelay": 1,
+
+    // Controls if suggestions should automatically show up when typing trigger characters
+    "editor.suggestOnTriggerCharacters": true,
+
+    // Controls if pressing tab inserts the best suggestion and if tab cycles through other suggestions
+    "editor.tabCompletion": "on",
+
+    // Controls whether sorting favours words that appear close to the cursor
+    "editor.suggest.localityBonus": true,
+
+    // Controls how suggestions are pre-selected when showing the suggest list
+    "editor.suggestSelection": "first",
+
+    // Enable word based suggestions
+    "editor.wordBasedSuggestions": "matchingDocuments",
+
+    // Enable parameter hints
+    "editor.parameterHints.enabled": true,
+    
     "window.zoomLevel": 0,
 
-    "workbench.tree.indent": 30,
+    "workbench.tree.indent": 10,
     "workbench.iconTheme": "vscode-icons",
     "workbench.colorTheme": "Default Dark Modern",
     "workbench.colorCustomizations": {
-        "tree.indentGuidesStroke": "#008cff"
+        "tree.indentGuidesStroke": "#0099ff",
+        "activityBar.foreground":"#0099ff",
+        "activityBarBadge.foreground":"#0099ff",
     },
 
     "files.autoSave": "afterDelay",
-
     "explorer.compactFolders": false,
-
     "clang-format.executable": "clang-format",
     "clang-format.style": "file",
     "clang-format.fallbackStyle": "Google",
     "clang-format.language.cpp.enable": true,
-
     "cmake.languageSupport.enableFileAPI": true,
-
     "ros.distro": "humble",
     "ros.rosSetupScript": "/opt/ros/humble/install/setup.bash",
     "ros.isolateEnvironment": false,
-
     "[python]": {
         "editor.formatOnType": true
     },
-
     "git.openRepositoryInParentFolders": "never",
-
     "[cpp]": {
-        "editor.defaultFormatter": "ms-vscode.cpptools"
+        "editor.defaultFormatter": "xaver.clang-format"
     },
-
     "python.autoComplete.extraPaths": [
         "/opt/ros/humble/lib/python3.10/site-packages",
     ],
     "python.analysis.extraPaths": [
         "/opt/ros/humble/lib/python3.10/site-packages",
     ],
+    "C_Cpp.errorSquiggles": "disabled"
     
-    "C_Cpp.errorSquiggles": "disabled",
-    "files.associations": {
-        "cctype": "cpp",
-        "clocale": "cpp",
-        "cmath": "cpp",
-        "csignal": "cpp",
-        "cstdarg": "cpp",
-        "cstddef": "cpp",
-        "cstdio": "cpp",
-        "cstdlib": "cpp",
-        "cstring": "cpp",
-        "ctime": "cpp",
-        "cwchar": "cpp",
-        "cwctype": "cpp",
-        "array": "cpp",
-        "atomic": "cpp",
-        "strstream": "cpp",
-        "bit": "cpp",
-        "*.tcc": "cpp",
-        "bitset": "cpp",
-        "chrono": "cpp",
-        "codecvt": "cpp",
-        "complex": "cpp",
-        "condition_variable": "cpp",
-        "cstdint": "cpp",
-        "deque": "cpp",
-        "forward_list": "cpp",
-        "list": "cpp",
-        "map": "cpp",
-        "set": "cpp",
-        "unordered_map": "cpp",
-        "unordered_set": "cpp",
-        "vector": "cpp",
-        "exception": "cpp",
-        "algorithm": "cpp",
-        "functional": "cpp",
-        "iterator": "cpp",
-        "memory": "cpp",
-        "memory_resource": "cpp",
-        "numeric": "cpp",
-        "optional": "cpp",
-        "random": "cpp",
-        "ratio": "cpp",
-        "string": "cpp",
-        "string_view": "cpp",
-        "system_error": "cpp",
-        "tuple": "cpp",
-        "type_traits": "cpp",
-        "utility": "cpp",
-        "fstream": "cpp",
-        "future": "cpp",
-        "initializer_list": "cpp",
-        "iomanip": "cpp",
-        "iosfwd": "cpp",
-        "iostream": "cpp",
-        "istream": "cpp",
-        "limits": "cpp",
-        "mutex": "cpp",
-        "new": "cpp",
-        "ostream": "cpp",
-        "shared_mutex": "cpp",
-        "sstream": "cpp",
-        "stdexcept": "cpp",
-        "streambuf": "cpp",
-        "thread": "cpp",
-        "cfenv": "cpp",
-        "cinttypes": "cpp",
-        "typeindex": "cpp",
-        "typeinfo": "cpp",
-        "valarray": "cpp",
-        "variant": "cpp"
-    }
 }
