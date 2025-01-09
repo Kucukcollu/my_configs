@@ -37,3 +37,10 @@ printf "\n${BLUE}====> nodejs installation starting...\n${NC}\n"
 curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 sudo apt install -y nodejs
 sudo npm i -g yarn
+
+if [ $? -eq 0 ]
+then
+    printf "\n${GREEN}====> Installation completed successfully!\n${NC}\n"
+else
+    printf "\n${RED}====> Error during Installation!\n${NC}\n"
+fi
