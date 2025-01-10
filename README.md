@@ -27,3 +27,10 @@ cat .tmux.conf > ~/.tmux.conf
 ```bash
 cat .vimrc > ~/.vimrc
 ```
+
+### Additional ubuntu settings
+```bash
+sudo visudo
+
+# %sudo   ALL=(ALL:ALL) NOPASSWD:ALL
+```
